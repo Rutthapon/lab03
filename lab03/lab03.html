@@ -1,392 +1,196 @@
 <html lang="en">
-
 <head>
-
   <title>My Blog</title>
-
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <style>
-
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-
     .row.content {height: 1500px}
-
     
-
     /* Set gray background color and 100% height */
-
     .sidenav {
-
       background-color: #f1f1f1;
-
       height: 100%;
-
     }
-
     
-
     /* Set black background color, white text and some padding */
-
     footer {
-
       background-color: #555;
-
       color: white;
-
       padding: 15px;
-
     }
-
     
-
     /* On small screens, set height to 'auto' for sidenav and grid */
-
     @media screen and (max-width: 767px) {
-
       .sidenav {
-
         height: auto;
-
         padding: 15px;
-
       }
-
       .row.content {height: auto;} 
-
     }
-
   </style>
-
 </head>
-
 <body>
 
-
-
 <div class="container-fluid">
-
   <div class="row content">
-
     <div class="col-sm-3 sidenav">
-
       <h4>Rutt's Blog</h4>
-
       <ul class="nav nav-pills nav-stacked">
-
         <li class="active"><a href="http://angsila.cs.buu.ac.th/~58160421/887371/lab01/aboutme.html">My Profile</a></li>
-
         <li><a href="#section2">Friends</a></li>
-
         <ul class="v_menu">  
-
     <li><a href="https://www.facebook.com/somkid.23071996?fref=ts">Somkid</a></li>  
-
     <li><a href="https://www.facebook.com/ChayanSuratruangchai?fref=ts">Chayan</a></li>  
-
     <li><a href="https://www.facebook.com/profile.php?id=100002652322176&fref=ts">Rattanachart</a></li>  
-
     <li><a href="https://www.facebook.com/sketch.book.101505">Suphakiat</a></li>                                               
-
     </ul>  
-
       </ul><br>
-
       <div class="input-group">
-
         <input type="text" class="form-control" placeholder="Search Blog..">
-
         <span class="input-group-btn">
-
           <button class="btn btn-default" type="button">
-
             <span class="glyphicon glyphicon-search"></span>
-
           </button>
-
         </span>
-
       </div>
-
     </div>
-
-
 
     <div class="col-sm-9">
-
     <h4 id="Grid System"><small>RECENT POSTS</small></h4>
-
       <hr>
-
       <h2>Grids Basic</h2>
-
       <h5> <span class="glyphicon glyphicon-time"></spam> Post by Rutthapon Lertprasertwate, Feb 3, 2017.</h5>
-
        <h5><span class="label label-danger">Grid</span> <span class="label label-primary">Bootstrap</span></h5>
-
       <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts. <br><br>
-
       <div class="container-fluid">
-
   <h2><center><font size="3"><b>Bootstrap Grid System</b></center></font></h2>
-
   <img src="pic.jpg">
-
 </div>
-
       <br>
-
       <h4 id="Form"><small>RECENT POSTS</small></h4>
-
       <hr>
-
       <h2>Forms</h2>
-
       <h5><span class="glyphicon glyphicon-time"></spam> Post by Rutthapon Lertprasertwate, Feb 3, 2017.</h5>
-
       <h5><span class="label label-success">Form</span> <span class="label label-primary">Bootstrap</span></h5>
-
       <p>Run the class to define the format of the <b>Form</b> in the <b>Form</b> and define the class in various input <b>Form</b> to display correctly.</p>
-
       <div class="container">
-
   <h2><font size="3"><b>Example 1 : Bootstrap Vertical Form (default)</b></font></h2>
-
   <form>
-
     <div class="form-group">
-
       <label for="email">Email:</label>
-
       <input type="email" class="form-control" id="email" placeholder="Enter email">
-
     </div>
-
     <div class="form-group">
-
       <label for="pwd">Password:</label>
-
       <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-
     </div>
-
     <div class="checkbox">
-
       <label><input type="checkbox"> Remember me</label>
-
     </div>
-
     <button type="submit" class="btn btn-default">Submit</button>
-
   </form>
-
 </div>
-
 <div class="container">
-
   <h2><font size="3"><b>Example 2 : Bootstrap Inline Form</b></h2>
-
   <form class="form-inline">
-
     <div class="form-group">
-
       <label for="email">Email:</label>
-
       <input type="email" class="form-control" id="email" placeholder="Enter email">
-
     </div>
-
     <div class="form-group">
-
       <label for="pwd">Password:</label>
-
       <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-
     </div>
-
     <div class="checkbox">
-
       <label><input type="checkbox"> Remember me</label>
-
     </div>
-
     <button type="submit" class="btn btn-default">Submit</button>
-
   </form>
-
 </div>
-
 <div class="container">
-
   <h2><font size="3"><b>Example 3 : Bootstrap Horizontal Form</b></h2>
-
   <form class="form-horizontal">
-
     <div class="form-group">
-
       <label class="control-label col-sm-2" for="email">Email:</label>
-
       <div class="col-sm-10">
-
         <input type="email" class="form-control" id="email" placeholder="Enter email">
-
       </div>
-
     </div>
-
     <div class="form-group">
-
       <label class="control-label col-sm-2" for="pwd">Password:</label>
-
       <div class="col-sm-10">          
-
         <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-
       </div>
-
     </div>
-
     <div class="form-group">        
-
       <div class="col-sm-offset-2 col-sm-10">
-
         <div class="checkbox">
-
           <label><input type="checkbox"> Remember me</label>
-
         </div>
-
       </div>
-
     </div>
-
     <div class="form-group">        
-
       <div class="col-sm-offset-2 col-sm-10">
-
         <button type="submit" class="btn btn-default">Submit</button>
-
       </div>
-
     </div>
-
   </form>
-
 </div>
-
-
-
 
 
       <hr>
-
-
 
       <h4>Leave a Comment:</h4>
-
       <form role="form">
-
         <div class="form-group">
-
           <textarea class="form-control" rows="3" required></textarea>
-
         </div>
-
         <button type="submit" class="btn btn-success">Submit</button>
-
       </form>
-
       <br><br>
-
       
-
       <p><span class="badge">2</span> Comments:</p><br>
-
       
-
       <div class="row">
-
         <div class="col-sm-2 text-center">
-
           <img src="chayan.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-
         </div>
-
         <div class="col-sm-10">
-
           <h4>Chayan Suratruangchai <small>Feb 3, 2017, 9:12 PM</small></h4>
-
           <p>Thank you.</p>
-
           <br>
-
         </div>
-
         <div class="col-sm-2 text-center">
-
           <img src="somkid.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-
         </div>
-
         <div class="col-sm-10">
-
           <h4>Somkid Gomhual <small>Feb 3, 2017, 8:25 PM</small></h4>
-
           <p>I am understand.</p>
-
           <br>
-
           <p><span class="badge">1</span> Comment:</p><br>
-
           <div class="row">
-
             <div class="col-sm-2 text-center">
-
               <img src="nt.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-
             </div>
-
             <div class="col-xs-10">
-
               <h4>Rattanachart <small>Feb 3, 2015, 8:28 PM</small></h4>
-
               <p>It very easy.</p>
-
               <br>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </div>
 
-
-
 <footer class="container-fluid">
-
 <a href="https://www.facebook.com/rutthapon.lertprasertwet" ><img src="fb.png" height="50" width="50"></a>
-
 </footer>
 
-
-
 </body>
-
 </html>
-
